@@ -99,7 +99,7 @@ namespace Test.Api.Services
             return entity;
         }
 
-        public async Task<FacturaModel> GetByPersona(string PersonaId)
+        public async Task<FacturaModel> GetByPersona(int PersonaId)
         {
             FacturaModel entity = new FacturaModel();
             try
