@@ -124,6 +124,10 @@ namespace Test.Wpf.ViewModels
                 {
                     MessageBox.Show($"Se produjo un error al eliminar: {ex.Message}");
                 }
+                finally
+                {
+                    GetAll();
+                }
             }
         }
         public void ResetData()
